@@ -1,4 +1,4 @@
-#vmd -dispdev text < movie_cut.tcl -args 0 y cyl_y_cut dump.12345
+#vmd -dispdev text < movie_cut.tcl -args 0 y y_cut dump.12345
 set blend [lindex $argv 0]
 set cut [lindex $argv 1]
 set outfile [lindex $argv 2]
@@ -40,7 +40,7 @@ if {$blend == 1} {
 
 # representation
 mol modcolor 1 0 Type
-mol modstyle 1 0 QuickSurf 0.500000 0.500000 0.500000 2.000000#
+mol modstyle 1 0 QuickSurf 0.500000 0.500000 0.500000 2.000000
 #mol modstyle 1 0 VDW 0.3 12.0
 mol material Opaque
 
